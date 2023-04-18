@@ -6,14 +6,19 @@
       "price": 322
     },
     {
-      "id": 4,
       "title": "Product 4",
-      "price": 763
+      "price": "7634",
+      "id": 4
     },
     {
       "id": 5,
       "title": "Product 5",
       "price": 389
+    },
+    {
+      "title": "Ttt",
+      "price": "1233",
+      "id": 6
     }
   ]
 }

@@ -15,7 +15,7 @@ const ProductList = () => {
     const data = await response.json();
     setProducts(data);
   }
-
+ 
   const deleteProduct = async(id) => {
     await fetch(`http://localhost:8070/products/${id}`,{
       method: "DELETE",
@@ -44,7 +44,7 @@ const ProductList = () => {
                 <tr key={product.id}>
                   <td>{ index + 1 }</td>
                   <td>{ product.title } </td>
-                  <td>{ product.title } </td>
+                  <td>{ product.price } </td>
                   <td>
                     <Link to={`/edit/${product.id}`} className="button is-small is-info">Edit</Link>
                     <button onClick={() => deleteProduct(product.id)} className="button is-small is-danger">Delete</button>
